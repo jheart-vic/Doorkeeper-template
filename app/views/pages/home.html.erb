@@ -11,9 +11,11 @@
 <% end %>
 <p>To use the Api follow the steps below</p>
 <div class="container">
+<%= @application.as_json %>
 <ul>
  <li> <%=link_to 'Web Books', books_path %> </li>
- <li>Api V1 Books</li>
- <li>Android Books</li>
+ <li> <%=link_to 'Api V1 Books', api_v1_books_path %> </li>
+ <li> <%=link_to 'Api V1 Android Books', api_v1_android_books_path %> </li>
+
 </ul>
 </div>
